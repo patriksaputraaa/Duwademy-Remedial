@@ -1,0 +1,89 @@
+﻿@page "/categories"
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject CategoryService CategoryService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<h2 style="text-align:center">Categories</h2>
+
+<div style="text-align: right; margin-bottom: 20px; margin-right: 50px">
+    <button class="btn btn-success" @onclick="AddNewCategory">Add New Category</button>
+</div>
+
+@if (categories.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Category ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in categories)
+            {
+                <tr>
+                    <td>@category.CategoryId</td>
+                    <td>@category.Name</td>
+                    <td>@category.Description</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => UpdateCategory(category.CategoryId)">Update</button>
+                        <button class="btn btn-danger" @onclick="() => DeleteCategory(category.CategoryId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No categories found. Loading...</p>
+}
+
+@code {
+    private List<Category> categories = new List<Category>(); // Initialize with an empty list
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender){
+            categories = await CategoryService.GetCategoriesAsync();
+            Console.WriteLine($"Total categories loaded: {categories.Count}");
+            StateHasChanged();
+        }
+        
+    }
+
+    private async Task LoadCategoriesAsync()
+    {
+        categories = await CategoryService.GetCategoriesAsync();
+        Console.WriteLine($"Total categories loaded: {categories.Count}");
+    }
+
+    private async Task DeleteCategory(int categoryId)
+    {
+        Console.WriteLine($"Deleting category with ID: {categoryId}");
+
+        // Call the delete method in CategoryService
+        await CategoryService.DeleteCategoryAsync(categoryId);
+
+        // Refresh the category list after deletion
+        await LoadCategoriesAsync();
+    }
+
+    private void UpdateCategory(int categoryId)
+    {
+        Console.WriteLine($"Updating category with ID: {categoryId}");
+
+        // Navigate to the update page for the selected category
+        NavigationManager.NavigateTo($"/editcategory/{categoryId}");
+    }
+
+    private void AddNewCategory()
+    {
+        // Navigate to the add category page
+        NavigationManager.NavigateTo("/addcategory");
+    }
+}

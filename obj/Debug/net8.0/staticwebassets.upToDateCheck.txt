@@ -1,0 +1,11 @@
+wwwroot\app.css
+wwwroot\css\bootstrap.min.css
+wwwroot\css\bootstrap.min.css.map
+wwwroot\css\site.css
+wwwroot\images\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg
+wwwroot\images\aspcore.png
+wwwroot\images\default-image.jpg
+wwwroot\images\maui.png
+wwwroot\js\bootstrap.min.js
+wwwroot\js\bootstrap.min.js.map
+wwwroot\js\datatable.js

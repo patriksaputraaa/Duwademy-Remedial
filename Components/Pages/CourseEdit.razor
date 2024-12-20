@@ -1,0 +1,144 @@
+﻿@page "/editcourse/{courseId:int}"
+@rendermode InteractiveServer
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject CourseService CourseService
+@inject CategoryService CategoryService
+@inject NavigationManager NavigationManager
+@inject IWebHostEnvironment WebHostEnvironment
+
+<h3>Edit Course</h3>
+
+@if (course == null)
+{
+    <p>Loading course...</p>
+}
+else
+{
+    <div class="container mt-4">
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" @bind="course.Name" class="form-control" placeholder="Enter course title" />
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="description">Description</label>
+                <input type="text" id="description" @bind="course.Description" class="form-control" placeholder="Enter course description" />
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration" @bind="course.Duration" class="form-control" placeholder="Enter course duration" />
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="category">Category</label>
+                <select id="category" @bind="course.CategoryId" class="form-control">
+                    <option value="">Select a category</option> <!-- Optional: Default prompt -->
+                    @if (categories != null && categories.Any())
+                    {
+                        @foreach (var category in categories)
+                        {
+                            <option value="@category.CategoryId">@category.Name</option> <!-- Bind to Id -->
+                        }
+                    }
+                </select>
+
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Current Image</label><br />
+                @if (!string.IsNullOrEmpty(course.ImageName))
+                {
+                    <img src="@course.ImageName" alt="Course Image" width="200" style="object-fit: cover; margin-top: 10px; border: 1px solid #ccc;" />
+                    <div style="margin-top: 10px;">
+                        <p class="text-muted">Current Image: @course.ImageName</p>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted">No image uploaded.</p>
+                }
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="image">Upload New Image</label>
+                <InputFile id="image" OnChange="OnImageSelected" class="form-control" />
+            </div>
+
+            <div class="mt-4">
+                <button type="button" class="btn btn-primary" @onclick="EventCallback.Factory.Create(this, HandleValidSubmit)">Save</button>
+                <button type="button" class="btn btn-secondary" @onclick="EventCallback.Factory.Create(this, Cancel)">Cancel</button>
+            </div>
+        </form>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int courseId { get; set; }
+
+    private Course course; // To hold the course data
+    private IBrowserFile selectedImageFile; // To hold the selected image
+    private List<Category> categories; // List to hold available categories
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch the course from the API
+        course = await CourseService.GetCourseByIdAsync(courseId);
+
+        // Check if the course was fetched successfully
+        if (course == null)
+        {
+            NavigationManager.NavigateTo("/courses");
+            return; // Exit early if course not found
+        }
+
+        // Fetch categories from the API
+        categories = await CategoryService.GetCategoriesAsync();
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        // Check if a new image is selected and upload it
+        if (selectedImageFile != null)
+        {
+            var uploadsFolder = Path.Combine(WebHostEnvironment.WebRootPath, "uploads");
+            Directory.CreateDirectory(uploadsFolder); // Ensure directory exists
+
+            var imagePath = Path.Combine(uploadsFolder, selectedImageFile.Name);
+            using var stream = new FileStream(imagePath, FileMode.Create);
+            await selectedImageFile.OpenReadStream().CopyToAsync(stream);
+
+            // Update image path in course object
+            course.ImageName = $"/uploads/{selectedImageFile.Name}";
+        }
+
+        // Log course data for debugging
+        Console.WriteLine($"Updating course: {courseId}, Name: {course.Name}, Description: {course.Description}, Duration: {course.Duration}, CategoryId: {course.CategoryId}");
+
+        // Attempt to update the course
+        Console.WriteLine($"Updating course with ID {courseId}, CategoryId: {course.CategoryId}");
+        var success = await CourseService.UpdateCourseAsync(courseId, course);
+        if (success)
+        {
+            NavigationManager.NavigateTo("/courses");
+        }
+        else
+        {
+            // Handle error
+            Console.WriteLine("Failed to update course.");
+        }
+    }
+
+    private void OnImageSelected(InputFileChangeEventArgs e)
+    {
+        selectedImageFile = e.File;
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/courses");
+    }
+}

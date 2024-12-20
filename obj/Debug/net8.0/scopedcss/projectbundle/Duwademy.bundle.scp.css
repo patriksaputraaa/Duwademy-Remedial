@@ -1,0 +1,51 @@
+/* _content/Duwademy/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-aiha8mmnom] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-bar[b-aiha8mmnom] {
+    background-color: #343a40;
+    color: white;
+}
+
+.main-content[b-aiha8mmnom] {
+    flex: 1;
+    padding: 2rem;
+}
+
+.footer[b-aiha8mmnom] {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.navbar-nav .active[b-aiha8mmnom] {
+    font-weight: bolder;
+    color: white;
+    border-bottom: 3px solid white;
+
+}
+
+.course-card[b-aiha8mmnom] {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#blazor-error-ui[b-aiha8mmnom] {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem;
+    display: none;
+}

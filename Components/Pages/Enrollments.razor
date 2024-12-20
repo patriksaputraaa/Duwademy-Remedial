@@ -1,0 +1,76 @@
+﻿@page "/enrollments"
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject EnrollmentService EnrollmentService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+<PageTitle>Enrollments</PageTitle>
+
+<h3 class="text-center my-4">Enrollments</h3>
+<div class="d-flex justify-content-end mb-4 me-5">
+    <button class="btn btn-success" @onclick="AddNewEnrollment">
+        <i class="bi bi-plus-circle"></i> Create New Enrollment
+    </button>
+</div>
+
+@if (enrollments == null)
+{
+    <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p><em>Loading...</em></p>
+    </div>
+}
+else if (!enrollments.Any())
+{
+    <div class="alert alert-warning text-center" role="alert">
+        <strong>No enrollments found!</strong>
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Course Name</th>
+                    <th>Description</th>
+                    <th>Instructors</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var courseGroup in enrollments.GroupBy(e => e.Course.CourseId))
+                {
+                    var course = courseGroup.First().Course;
+                    <tr>
+                        <td><strong>@course?.Name</strong></td>
+                        <td>@course?.Description</td>
+                        <td>
+                            <ul class="list-unstyled mb-0">
+                                @foreach (var instructor in courseGroup.SelectMany(e => e.Instructors).DistinctBy(i => i.Id))
+                                {
+                                    <li><i class="bi bi-person-fill"></i> @instructor.FullName (@instructor.UserName)</li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private List<Enrollment> enrollments = new List<Enrollment>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        enrollments = await EnrollmentService.GetEnrollmentsAsync();
+    }
+
+    private void AddNewEnrollment()
+    {
+        NavigationManager.NavigateTo("/addenrollment");
+    }
+}

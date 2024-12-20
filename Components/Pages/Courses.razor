@@ -1,0 +1,102 @@
+﻿@page "/courses"
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject CourseService CourseService
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<h2 style="text-align:center">Courses Table</h2>
+
+<div style="text-align: right; margin-bottom: 20px; margin-right: 50px">
+    <button class="btn btn-success" @onclick="AddNewCourse">Add New Course</button>
+</div>
+
+<!-- Search and Filter Section -->
+<div class="mb-4">
+    <input type="text" class="form-control" placeholder="Search courses..." @bind="searchQuery" @oninput="FilterCourses" />
+</div>
+
+@if (filteredCourses != null && filteredCourses.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr style="text-align:center">
+                <th>Course ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in filteredCourses)
+            {
+                <tr>
+                    <td>@course.CourseId</td>
+                    <td>@course.Name</td>
+                    <td>@course.Category.Name</td>
+                    <td>@course.Description</td>
+                    <td style="text-align:center">
+                        <img src="/images/@course.ImageName" alt="@course.ImageName"
+                             style="height: 50px; object-fit: cover; width: 50px;"
+                             onerror="this.onerror=null; this.src='/images/default-image.jpg';" />
+                    </td>
+                    <td style="text-align:center">
+                        <button class="btn btn-primary" @onclick="() => EditCourse(course.CourseId)">Update</button>
+                        <button class="btn btn-danger" @onclick="() => DeleteCourse(course.CourseId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No courses found matching your criteria.</p>
+}
+
+@code {
+    private List<Course> courses = new List<Course>();
+    private List<Course> filteredCourses = new List<Course>(); // Initialize here
+    private string searchQuery = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCoursesAsync();
+        FilterCourses(); // Initial filter to display all courses
+    }
+
+    private async Task LoadCoursesAsync()
+    {
+        courses = await CourseService.GetCoursesAsync();
+        filteredCourses = new List<Course>(courses); // Set filteredCourses to loaded courses
+    }
+
+    private void FilterCourses()
+    {
+        filteredCourses = courses
+            .Where(course => string.IsNullOrEmpty(searchQuery) ||
+                             course.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private void EditCourse(int id)
+    {
+        Console.WriteLine($"EditCourse called with ID: {id}");
+        NavigationManager.NavigateTo($"/editcourse/{id}");
+    }
+
+    private async Task DeleteCourse(int courseId)
+    {
+        Console.WriteLine($"Deleting course with ID: {courseId}");
+        await CourseService.DeleteCourseAsync(courseId);
+        await LoadCoursesAsync();
+        FilterCourses(); // Re-filter after deleting a course
+    }
+
+    private void AddNewCourse()
+    {
+        NavigationManager.NavigateTo("/addcourse"); // Make sure you have an AddCourse page
+    }
+}

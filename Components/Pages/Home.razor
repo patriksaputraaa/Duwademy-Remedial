@@ -1,0 +1,145 @@
+﻿@page "/home"
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject CourseService CourseService
+@inject CategoryService CategoryService
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+<PageTitle>Home</PageTitle>
+<button @onclick="Logout">Logout</button>
+<div class="container" style="margin: 10px 10px 50px 50px">
+    <!-- Search and Filter Section -->
+    <section class="mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Search courses..."
+                @bind="searchQuery" />
+            </div>
+            <div class="col-md-6">
+                <select class="form-control" @bind="selectedCategoryId">
+                    <option value="">All Categories</option>
+                    @foreach (var category in categories)
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Cards Section -->
+    <section>
+        <br />
+        <h2 class="mb-4">Courses</h2>
+        <div class="row">
+            @if (filteredCourses != null && filteredCourses.Any())
+            {
+                foreach (var course in filteredCourses)
+                {
+                    if (!string.IsNullOrEmpty(course.ImageName)) // Ensure image name is valid
+                    {
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100" style="width: 18rem; max-width: 300px;">
+                                <img src="/images/@course.ImageName" alt="@course.Name" class="card-img-top"
+                                style="height: 200px; object-fit: cover; width: 100%;" />
+                                <div class="text-center mt-2">
+                                    <span class="category-pill">@course.Category?.Name</span> <!-- Safe navigation -->
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mt-3">@course.Name</h5>
+                                    <p class="card-text text-muted">@course.Description</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <p>No courses found matching your criteria.</p>
+            }
+        </div>
+    </section>
+</div>
+
+@code {
+    private async Task Logout()
+    {
+        // Remove token from localStorage
+        await JS.InvokeVoidAsync("localStorage.removeItem", "authToken");
+
+        // Redirect to login page
+        NavigationManager.NavigateTo("/");
+    }
+
+    private List<Course> courses = new List<Course>();
+    private List<Course> filteredCourses = new List<Course>();
+    private List<Category> categories = new List<Category>();
+
+    private string _searchQuery = string.Empty;
+    private string searchQuery
+    {
+        get => _searchQuery;
+        set
+        {
+            _searchQuery = value;
+            FilterCourses();
+        }
+    }
+
+    private string _selectedCategoryId;
+    private string selectedCategoryId
+    {
+        get => _selectedCategoryId;
+        set
+        {
+            _selectedCategoryId = value;
+            FilterCourses();
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (firstRender)
+        {
+            courses = await CourseService.GetCoursesAsync();
+            categories = await CategoryService.GetCategoriesAsync();
+            
+
+            // Log the loaded courses
+            Console.WriteLine($"Total courses loaded: {courses.Count}");
+
+            // Set image name to default if it doesn't exist
+            foreach (var course in courses)
+            {
+                if (string.IsNullOrEmpty(course.ImageName) || !CourseService.DoesImageExist(course.ImageName))
+                {
+                    course.ImageName = "default-image.jpg"; // Set to default if not found
+                }
+            }
+
+            FilterCourses(); // Initial filter
+            StateHasChanged();
+        }
+        
+    }
+
+    private void FilterCourses()
+    {
+        int.TryParse(selectedCategoryId, out int selectedCategoryIdInt);
+
+        filteredCourses = courses
+            .Where(course =>
+                (string.IsNullOrEmpty(searchQuery) || course.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)) &&
+                (string.IsNullOrEmpty(selectedCategoryId) || course.Category?.CategoryId == selectedCategoryIdInt))
+            .ToList();
+
+        // Log filtered results
+        Console.WriteLine($"Filtered courses count: {filteredCourses.Count}");
+    }
+}

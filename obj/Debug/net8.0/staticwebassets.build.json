@@ -1,0 +1,1361 @@
+{
+  "Version": 1,
+  "Hash": "/6Julvzh0YtQ+T05bjxv/MlH1qH7PfDL0ei3YPQyrwA=",
+  "Source": "Duwademy",
+  "BasePath": "_content/Duwademy",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Duwademy\\wwwroot",
+      "Source": "Duwademy",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Duwademy.styles.css",
+      "SourceId": "Duwademy",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "Duwademy#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "x68xt5hsr7",
+      "Integrity": "uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Duwademy.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Duwademy.bundle.scp.css",
+      "SourceId": "Duwademy",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "Duwademy#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "x68xt5hsr7",
+      "Integrity": "uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Duwademy.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\app.css",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sw2b1e5w8n",
+      "Integrity": "hDMiMML3RkLNSDdzRDDCbl5BSgoDV5T2+m4JVhdgmug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "46ein0sx1k",
+      "Integrity": "PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css.map",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "css/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v0zj4ognzu",
+      "Integrity": "8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\site.css",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2sx0oefjhy",
+      "Integrity": "AmtmA5UdFr5esOWPQwPjAU6H4wTrUVuFegY8FjlBaNg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "images/37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fkcmyzenii",
+      "Integrity": "H1eAdiPGijh5bANSTNOHKsyGn8DTAC6C6yEtMGiRYVc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\aspcore.png",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "images/aspcore#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p66tv7ca8k",
+      "Integrity": "kf/05opcmdFHWY6kEqV/EMVxAcU0WXXT3A2sdZ4kzYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aspcore.png"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\default-image.jpg",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "images/default-image#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fwbu7qw0ge",
+      "Integrity": "v6a3b6/Fabd1n+AwYwnksMzg8jQAsx+vik2iZr6QXLc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default-image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\maui.png",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "images/maui#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "31f5v0m7ab",
+      "Integrity": "V3pDJ0gduyNDhCpjVc4UQWSUezfdUlGyXhy3NRSQgyI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\maui.png"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "js/bootstrap.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "63fj8s7r0e",
+      "Integrity": "3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js.map",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "js/bootstrap.min.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j3bgjxly4",
+      "Integrity": "ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\datatable.js",
+      "SourceId": "Duwademy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\",
+      "BasePath": "_content/Duwademy",
+      "RelativePath": "js/datatable#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fpdtk8d91p",
+      "Integrity": "XVGs43VX7bT38gGinYERMyKP6/FDHkNE9udRov+g1is=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\datatable.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hDMiMML3RkLNSDdzRDDCbl5BSgoDV5T2+m4JVhdgmug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hDMiMML3RkLNSDdzRDDCbl5BSgoDV5T2+m4JVhdgmug="
+        }
+      ]
+    },
+    {
+      "Route": "app.sw2b1e5w8n.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hDMiMML3RkLNSDdzRDDCbl5BSgoDV5T2+m4JVhdgmug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sw2b1e5w8n"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hDMiMML3RkLNSDdzRDDCbl5BSgoDV5T2+m4JVhdgmug="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.46ein0sx1k.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "46ein0sx1k"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.css.v0zj4ognzu.map",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v0zj4ognzu"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP+GXYc3V1WwFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.2sx0oefjhy.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AmtmA5UdFr5esOWPQwPjAU6H4wTrUVuFegY8FjlBaNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2sx0oefjhy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AmtmA5UdFr5esOWPQwPjAU6H4wTrUVuFegY8FjlBaNg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AmtmA5UdFr5esOWPQwPjAU6H4wTrUVuFegY8FjlBaNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AmtmA5UdFr5esOWPQwPjAU6H4wTrUVuFegY8FjlBaNg="
+        }
+      ]
+    },
+    {
+      "Route": "Duwademy.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Duwademy.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 19:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY="
+        }
+      ]
+    },
+    {
+      "Route": "Duwademy.styles.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Duwademy.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 19:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY="
+        }
+      ]
+    },
+    {
+      "Route": "Duwademy.x68xt5hsr7.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Duwademy.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 19:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x68xt5hsr7"
+        },
+        {
+          "Name": "label",
+          "Value": "Duwademy.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY="
+        }
+      ]
+    },
+    {
+      "Route": "Duwademy.x68xt5hsr7.styles.css",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Duwademy.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 19:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x68xt5hsr7"
+        },
+        {
+          "Name": "label",
+          "Value": "Duwademy.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uSiqcDyF68IRPYTLZClIGv9OD4F6vCGcK2U6sZKeOpY="
+        }
+      ]
+    },
+    {
+      "Route": "images/37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.fkcmyzenii.jpg",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1eAdiPGijh5bANSTNOHKsyGn8DTAC6C6yEtMGiRYVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fkcmyzenii"
+        },
+        {
+          "Name": "label",
+          "Value": "images/37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1eAdiPGijh5bANSTNOHKsyGn8DTAC6C6yEtMGiRYVc="
+        }
+      ]
+    },
+    {
+      "Route": "images/37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1eAdiPGijh5bANSTNOHKsyGn8DTAC6C6yEtMGiRYVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1eAdiPGijh5bANSTNOHKsyGn8DTAC6C6yEtMGiRYVc="
+        }
+      ]
+    },
+    {
+      "Route": "images/aspcore.p66tv7ca8k.png",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\aspcore.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kf/05opcmdFHWY6kEqV/EMVxAcU0WXXT3A2sdZ4kzYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p66tv7ca8k"
+        },
+        {
+          "Name": "label",
+          "Value": "images/aspcore.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf/05opcmdFHWY6kEqV/EMVxAcU0WXXT3A2sdZ4kzYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/aspcore.png",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\aspcore.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kf/05opcmdFHWY6kEqV/EMVxAcU0WXXT3A2sdZ4kzYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf/05opcmdFHWY6kEqV/EMVxAcU0WXXT3A2sdZ4kzYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-image.fwbu7qw0ge.jpg",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\default-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v6a3b6/Fabd1n+AwYwnksMzg8jQAsx+vik2iZr6QXLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fwbu7qw0ge"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default-image.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v6a3b6/Fabd1n+AwYwnksMzg8jQAsx+vik2iZr6QXLc="
+        }
+      ]
+    },
+    {
+      "Route": "images/default-image.jpg",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\default-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v6a3b6/Fabd1n+AwYwnksMzg8jQAsx+vik2iZr6QXLc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v6a3b6/Fabd1n+AwYwnksMzg8jQAsx+vik2iZr6QXLc="
+        }
+      ]
+    },
+    {
+      "Route": "images/maui.31f5v0m7ab.png",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\maui.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3pDJ0gduyNDhCpjVc4UQWSUezfdUlGyXhy3NRSQgyI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31f5v0m7ab"
+        },
+        {
+          "Name": "label",
+          "Value": "images/maui.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3pDJ0gduyNDhCpjVc4UQWSUezfdUlGyXhy3NRSQgyI="
+        }
+      ]
+    },
+    {
+      "Route": "images/maui.png",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\maui.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3pDJ0gduyNDhCpjVc4UQWSUezfdUlGyXhy3NRSQgyI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3pDJ0gduyNDhCpjVc4UQWSUezfdUlGyXhy3NRSQgyI="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.63fj8s7r0e.js",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60635"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "63fj8s7r0e"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60635"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js.0j3bgjxly4.map",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j3bgjxly4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bootstrap.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
+        }
+      ]
+    },
+    {
+      "Route": "js/bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZI01e/ns473GKvACG4McggJdxvFfFIw4xspwQiG8Ye4="
+        }
+      ]
+    },
+    {
+      "Route": "js/datatable.fpdtk8d91p.js",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\datatable.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XVGs43VX7bT38gGinYERMyKP6/FDHkNE9udRov+g1is=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fpdtk8d91p"
+        },
+        {
+          "Name": "label",
+          "Value": "js/datatable.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XVGs43VX7bT38gGinYERMyKP6/FDHkNE9udRov+g1is="
+        }
+      ]
+    },
+    {
+      "Route": "js/datatable.js",
+      "AssetFile": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\datatable.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XVGs43VX7bT38gGinYERMyKP6/FDHkNE9udRov+g1is=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:15:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XVGs43VX7bT38gGinYERMyKP6/FDHkNE9udRov+g1is="
+        }
+      ]
+    }
+  ]
+}

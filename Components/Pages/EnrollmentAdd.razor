@@ -1,0 +1,112 @@
+﻿@page "/addenrollment"
+@using Duwademy.Components.Services
+@using Duwademy.Components.Models
+@inject CourseService CourseService
+@inject CategoryService CategoryService
+@inject InstructorService InstructorService
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<h3>EnrollmentAdd</h3>
+
+<div class="container">
+    <div class="form-group">
+        <label for="instructor">Select Instructor</label>
+        <select id="instructor" class="form-control" @bind="selectedInstructorId">
+            <option value="">-- Select Instructor --</option>
+            @foreach (var instructor in instructors)
+            {
+                <option value="@instructor.Id">@instructor.FullName</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="course">Select Course</label>
+        <select id="course" class="form-control" @bind="selectedCourseId">
+            <option value="">-- Select Course --</option>
+            @foreach (var course in courses)
+            {
+                <option value="@course.CourseId">@course.Name</option>
+            }
+        </select>
+    </div>
+
+    <button class="btn btn-primary mt-3" @onclick="SubmitEnrollment">Submit Enrollment</button>
+</div>
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <p class="text-success">@successMessage</p>
+}
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <p class="text-danger">@errorMessage</p>
+}
+
+
+@code {
+    private List<Instructor> instructors = new List<Instructor>();
+    private List<Course> courses = new List<Course>();
+    private string selectedInstructorId;
+    private string selectedCourseId;
+
+    private string successMessage = string.Empty;
+    private string errorMessage = string.Empty;
+
+    [Inject] private HttpClient Http { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Fetch instructors and courses from API
+            instructors = await InstructorService.GetInstructorsAsync();
+            courses = await CourseService.GetCoursesAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+
+    private async Task SubmitEnrollment()
+    {
+        successMessage = string.Empty;
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(selectedInstructorId) || string.IsNullOrWhiteSpace(selectedCourseId))
+        {
+            errorMessage = "Please select both an instructor and a course.";
+            return;
+        }
+
+        var enrollment = new
+        {
+            instructorId = int.Parse(selectedInstructorId),
+            courseId = int.Parse(selectedCourseId)
+        };
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("https://actbackendseervices.azurewebsites.net/api/enrollments", enrollment);
+
+            if (response.IsSuccessStatusCode)
+            {
+                successMessage = "Enrollment successful!";
+                NavigationManager.NavigateTo("/enrollments");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                errorMessage = $"Enrollment failed: {errorContent}";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+    }
+}

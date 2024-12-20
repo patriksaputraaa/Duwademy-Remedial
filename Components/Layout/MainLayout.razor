@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+@* @rendermode InteractiveServer *@
+<head>
+    <!-- Link to Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+
+<div class="page d-flex flex-column">
+    <!-- Navbar -->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <a class="navbar-brand" href="/home" style="margin-left:60px; font-weight:bolder;">Duwa Academy</a>
+        <div class="navbar navbar-expand-lg" style="margin-right:60px" id="navbarNav">
+            <ul class="navbar-nav">
+                <NavLink class="nav-link" href="courses" activeClass="active" style="margin:10px">
+                    <span class="oi oi-home" aria-hidden="true"></span> Courses
+                </NavLink>
+                <NavLink class="nav-link" href="categories" activeClass="active" style="margin:10px">
+                    <span class="oi oi-home" aria-hidden="true"></span> Categories
+                </NavLink>
+                <NavLink class="nav-link" href="enrollments" activeClass="active" style="margin:10px">
+                    <span class="oi oi-home" aria-hidden="true"></span> Enrollment
+                </NavLink>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+        @Body
+    </main>
+</div>
+
+<!-- Load JavaScript libraries at the end of the body -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+@code{
+    
+}

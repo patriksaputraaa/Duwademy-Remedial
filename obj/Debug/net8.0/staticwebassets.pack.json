@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Duwademy.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Duwademy.x68xt5hsr7.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg",
+      "PackagePath": "staticwebassets\\images\\37bba052-2634-43b3-b87d-40355e46b7f5_cat-8540772_640.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\aspcore.png",
+      "PackagePath": "staticwebassets\\images\\aspcore.png"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\default-image.jpg",
+      "PackagePath": "staticwebassets\\images\\default-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\images\\maui.png",
+      "PackagePath": "staticwebassets\\images\\maui.png"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp394\\Downloads\\Duwademy-main\\Duwademy-main\\wwwroot\\js\\datatable.js",
+      "PackagePath": "staticwebassets\\js\\datatable.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Duwademy.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Duwademy.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Duwademy.props",
+      "PackagePath": "build\\Duwademy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Duwademy.props",
+      "PackagePath": "buildMultiTargeting\\Duwademy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Duwademy.props",
+      "PackagePath": "buildTransitive\\Duwademy.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
